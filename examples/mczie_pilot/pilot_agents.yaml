@@ -1,0 +1,38 @@
+pilot_name: mczie-sales-pilot-v1
+owner: McZie
+agents:
+  - id: agent-next-action
+    purpose: Generar próxima acción comercial ejecutable
+    output_contract:
+      - next_action_verb
+      - owner
+      - due_date
+      - rationale
+    reward_weights:
+      action_valid: 1.0
+      accepted_by_human: 1.5
+      executed_on_time: 1.0
+      stage_progress_7d: 2.0
+      invalid_output_penalty: -2.0
+
+  - id: agent-risk-sentinel
+    purpose: Identificar riesgo comercial temprano
+    output_contract:
+      - risk_score
+      - risk_drivers
+      - mitigation_action
+    reward_weights:
+      risk_calibration: 1.5
+      useful_mitigation: 1.0
+      false_alarm_penalty: -1.0
+
+  - id: agent-forecast-keeper
+    purpose: Asegurar calidad de datos del pipeline
+    output_contract:
+      - data_gaps
+      - required_fields
+      - correction_plan
+    reward_weights:
+      required_field_detection: 1.5
+      reduced_missing_fields: 1.0
+      noisy_suggestions_penalty: -0.5

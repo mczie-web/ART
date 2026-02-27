@@ -1,0 +1,32 @@
+[
+  {
+    "id": "OP-002",
+    "company": "GC_SP",
+    "stage": "Propuesta presentada",
+    "owner": "Mateo Carmona",
+    "nextAction": "Llamar para reactivación y solicitar monto",
+    "nextActionDate": "2026-03-01",
+    "status": "at-risk",
+    "valueUSD": null
+  },
+  {
+    "id": "OP-008",
+    "company": "SCV",
+    "stage": "Negociación",
+    "owner": "Alexander Orrego",
+    "nextAction": "Cerrar plan de estabilización + SLA",
+    "nextActionDate": "2026-03-02",
+    "status": "at-risk",
+    "valueUSD": null
+  },
+  {
+    "id": "OP-014",
+    "company": "BRANCHOS",
+    "stage": "Propuesta presentada",
+    "owner": "Mateo Carmona",
+    "nextAction": "Enviar minuta ejecutiva y agendar workshop",
+    "nextActionDate": "2026-03-01",
+    "status": "active",
+    "valueUSD": null
+  }
+]
